@@ -44,6 +44,10 @@ p{
 	margin:  2.5%;
 }
 
+section{
+	opacity: 0;
+}
+
 
 
 /* Navigation bar  */
@@ -96,6 +100,7 @@ p{
 /*About me section */
 
 #about-section{
+	position:  absolute;
 	text-align: justify;
 	display:  table;
 	padding-left:  5%;
@@ -103,6 +108,8 @@ p{
 	width:  100%;
 	margin-top:  5%;
 }
+
+
 
 #about-section h2{
 	display:  inline;
@@ -116,6 +123,12 @@ p{
 	height: 100%;
 	padding-left:  5%;
 	margin-right:  12.5%;
+}
+
+.show-element{
+	opacity:  1;
+	transition:  opacity 2s linear;
+	z-index:  -3333;
 }
 
 

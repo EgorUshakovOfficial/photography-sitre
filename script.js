@@ -4,7 +4,7 @@ const hamburgerMenu = document.getElementById('hamburger-menu');
 
 const close = document.getElementById('close'); 
 
-const aboutDescription = document.getElementById('about-section');
+const aboutSection = document.getElementById('about-section');
 
 //  Hamburger Menu
 hamburgerMenu.addEventListener('click', () =>{
@@ -24,17 +24,16 @@ close.addEventListener('click', () =>{
 })
 
 // Scroll animation 
-// document.addEventListener('scroll', ()=>{
-// 	const triggerBottom = (window.innerHeight / 2) ;
+document.addEventListener('scroll', ()=>{
+	const triggerBottom = (window.innerHeight / 2) ;
 
-// 	const aboutDescriptionTop = aboutDescription.getBoundingClientRect().top;
+	const aboutSectionTop = aboutSection.getBoundingClientRect().top;
 
-// 	if (triggerBottom > aboutDescriptionTop){
-// 		document.getElementById('about-description').classList.add('show-text');
-// 		document.getElementById('profile-picture').classList.add('show-picture');
-// 	}
+	if (triggerBottom > aboutSectionTop){
+		aboutSection.classList.add('show-element');
+	}
 
 
-// })
+})
 
 
