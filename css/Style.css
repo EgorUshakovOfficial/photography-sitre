@@ -92,6 +92,9 @@ section{
 
 #gallery-photos{
 	background: url('https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80') no-repeat center center fixed;
+	-o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
 	background-size:  cover;
 	width:  100vw;
 	height:  100vh;
